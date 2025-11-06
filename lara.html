@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de Desenvolvimento de Jogos | Innova Academy</title>
+  <style>
+    /* ======== ESTILOS GERAIS ======== */
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #ffffff;
+      color: #1e293b;
+    }
+
+    /* ======== HEADER ======== */
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(8px);
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-container img {
+      height: 60px;
+    }
+
+    .logo-text h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      color: #3b0764;
+    }
+
+    .slogan {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #475569;
+    }
+
+    nav a {
+      color: #3b0764;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* ======== HERO SECTION ======== */
+    .hero {
+      background: linear-gradient(
+          rgba(59, 7, 100, 0.7),
+          rgba(56, 189, 248, 0.7)
+        ),
+        url('https://images.unsplash.com/photo-1606813902781-1b1a5eebf2df?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 200px 20px 120px;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      color: #ffffff;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* ======== SOBRE O CURSO ======== */
+    .sobre {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .sobre h3 {
+      color: #3b0764;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .sobre p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #1e293b;
+    }
+
+    /* ======== CONTEÚDO DO CURSO ======== */
+    .conteudo {
+      background-color: #f0f9ff;
+      padding: 60px 20px;
+    }
+
+    .conteudo h3 {
+      text-align: center;
+      color: #3b0764;
+      margin-bottom: 30px;
+    }
+
+    .topicos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .topico {
+      background: linear-gradient(135deg, #38bdf8, #3b0764);
+      color: white;
+      padding: 25px;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .topico:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(59, 7, 100, 0.3);
+    }
+
+    .topico h4 {
+      margin-bottom: 10px;
+    }
+
+    /* ======== BENEFÍCIOS ======== */
+    .beneficios {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .beneficios h3 {
+      color: #3b0764;
+      margin-bottom: 20px;
+    }
+
+    .beneficios ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .beneficios li {
+      margin: 10px 0;
+      font-size: 1.1rem;
+      color: #1e293b;
+    }
+
+    /* ======== FOOTER ======== */
+    footer {
+      background-color: #3b0764;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    /* ======== RESPONSIVIDADE ======== */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 20px;
+      }
+
+      .logo-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="e8ed1e06-9430-4d06-ad15-36d338e2d696.png" alt="Logo Innova Academy">
+      <div class="logo-text">
+        <h1>Innova Academy</h1>
+        <p class="slogan">Escola de Inteligência Artificial</p>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sites.html">Desenvolvimento Web</a>
+      <a href="games.html">Desenvolvimento de Jogos</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Curso de Desenvolvimento de Jogos</h2>
+    <p>Transforme suas ideias em experiências interativas! Aprenda a criar jogos incríveis do zero com ferramentas profissionais e mentoria especializada.</p>
+  </section>
+
+  <section class="sobre">
+    <h3>Sobre o Curso</h3>
+    <p>O curso de <strong>Desenvolvimento de Jogos</strong> da Innova Academy foi criado para quem sonha em trabalhar com criação de jogos digitais. Aqui, você aprenderá desde a lógica de programação até o design e publicação de jogos completos. Ideal para iniciantes e entusiastas que desejam ingressar na indústria dos games!</p>
+  </section>
+
+  <section class="conteudo">
+    <h3>O que você vai aprender</h3>
+    <div class="topicos">
+      <div class="topico">
+        <h4>🎮 Fundamentos de Game Design</h4>
+        <p>Aprenda a criar experiências de jogo envolventes e equilibradas, com foco na diversão e imersão.</p>
+      </div>
+      <div class="topico">
+        <h4>💻 Programação com Unity e C#</h4>
+        <p>Desenvolva jogos 2D e 3D usando a engine Unity, uma das mais utilizadas no mundo.</p>
+      </div>
+      <div class="topico">
+        <h4>🎨 Arte e Animação</h4>
+        <p>Entenda os princípios básicos de design visual, sprites, animação e texturização de personagens.</p>
+      </div>
+      <div class="topico">
+        <h4>🚀 Publicação e Portfólio</h4>
+        <p>Aprenda a exportar e publicar seus jogos em plataformas como Itch.io e Google Play.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="beneficios">
+    <h3>Por que escolher a Innova Academy?</h3>
+    <ul>
+      <li>✅ Aulas práticas e projetos reais</li>
+      <li>✅ Mentoria com profissionais da área</li>
+      <li>✅ Certificação reconhecida</li>
+      <li>✅ Acesso vitalício ao conteúdo</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Innova Academy | Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>

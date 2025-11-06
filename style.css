@@ -1,0 +1,120 @@
+/* ==== Estilos gerais ==== */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(180deg, #e6f0ff 0%, #f8f5ff 100%);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==== Cabeçalho ==== */
+.header {
+  background: linear-gradient(90deg, #7ab8ff, #753c9b);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.header h1 {
+  margin-bottom: 10px;
+  font-size: 2.2em;
+  letter-spacing: 1px;
+}
+
+.header p {
+  font-size: 1.1em;
+  opacity: 0.95;
+}
+
+/* ==== Conteúdo principal ==== */
+.container {
+  max-width: 900px;
+  background: white;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(142, 108, 255, 0.25);
+}
+
+.passos h2 {
+  background: linear-gradient(90deg, #7ab8ff, #8e6cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.6em;
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #7ab8ff, #8e6cff);
+  border-image-slice: 1;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.passos ol {
+  line-height: 1.8;
+  margin-left: 20px;
+}
+
+.passos li {
+  margin-bottom: 15px;
+}
+
+.passos pre {
+  background: linear-gradient(90deg, #eef5ff, #f2ecff);
+  color: #2a2a2a;
+  padding: 12px;
+  border-radius: 12px;
+  overflow-x: auto;
+  border-left: 5px solid #8e6cff;
+  box-shadow: 0 2px 8px rgba(142, 108, 255, 0.15);
+}
+
+/* ==== Links ==== */
+a {
+  color: #6c63ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #4a3ccf;
+}
+
+/* ==== Botão Voltar ==== */
+.btn-area {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn-voltar {
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(90deg, #7ab8ff, #8e6cff);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 35px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: 0.4s ease;
+  box-shadow: 0 6px 12px rgba(142, 108, 255, 0.3);
+}
+
+.btn-voltar:hover {
+  background: linear-gradient(90deg, #8e6cff, #7ab8ff);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(142, 108, 255, 0.4);
+}
+
+/* ==== Rodapé ==== */
+.footer {
+  text-align: center;
+  color: #555;
+  padding: 25px;
+  font-size: 0.9em;
+  background: linear-gradient(90deg, #7ab8ff, #8e6cff);
+  color: white;
+  margin-top: 60px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+}

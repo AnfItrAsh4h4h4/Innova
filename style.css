@@ -1,7 +1,158 @@
-header{
-    background-image: url('WDCF870a50iStjKzSCcYK6VtZttCPtWJIBiAPhPs.png');
-    height: 200;
+:root {
+  --roxo: #6a1b9a;
+  --azul: #00bcd4;
+  --dourado: #fbc02d;
+  --preto: #1f1f1f;
+  --cinza: #f5f5f5;
+  --fonte: 'Poppins', sans-serif;
 }
-h1{
-    text-align: center;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte);
+  color: var(--preto);
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--preto);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--roxo);
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  text-align: center;
+  padding: 8rem 2rem 5rem;
+  background: linear-gradient(90deg, var(--roxo), var(--azul));
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: var(--dourado);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #d4a10d;
+}
+
+/* ===== Cursos ===== */
+.courses {
+  padding: 4rem 2rem;
+  background-color: var(--cinza);
+}
+
+.courses h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: var(--roxo);
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.btn-outline {
+  border: 2px solid var(--roxo);
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  color: var(--roxo);
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-outline:hover {
+  background: var(--roxo);
+  color: #fff;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #fff;
+  color: #555;
+  border-top: 1px solid #eee;
 }

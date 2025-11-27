@@ -1,92 +1,76 @@
+/* Fundo roxo → azul claro */
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #000, #1b1b1b, #000);
-    color: white;
     font-family: Arial, sans-serif;
-
+    background: linear-gradient(180deg, #3a0ca3, #4361ee, #4cc9f0);
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    color: #ffffff;
 }
 
-/* Container principal estilo glass */
+/* Card central com efeito glass */
 .container {
-    background: rgba(255, 255, 255, 0.08);
-    padding: 40px;
-    width: 70%;
+    width: 80%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.12);
     border-radius: 25px;
-    box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+    padding: 35px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12px);
-    animation: slide 0.8s ease-out;
-    text-align: center;
+    animation: fadeIn 0.8s ease;
 }
 
-/* Animação de entrada */
-@keyframes slide {
+/* Animação */
+@keyframes fadeIn {
     from {
-        transform: translateY(40px);
         opacity: 0;
+        transform: translateY(25px);
     }
     to {
-        transform: translateY(0);
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
-/* Título neon */
-.titulo {
-    font-size: 35px;
-    margin-bottom: 20px;
-    text-shadow: 0 0 15px cyan;
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #e9e9ff;
+    font-size: 2.6em;
+    margin-bottom: 25px;
 }
 
-/* Descrição */
-.descricao {
-    font-size: 18px;
-    margin-bottom: 35px;
+/* Subtítulos */
+h2 {
+    color: #f0f0ff;
+    margin-top: 25px;
+}
+
+/* Texto */
+p {
+    color: #f5f8ff;
+    font-size: 1.15em;
     line-height: 1.6;
 }
 
-/* Cards */
-.cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 25px;
-}
-
-/* Cada card */
-.card {
-    flex: 1;
-    background: rgba(255,255,255,0.06);
-    padding: 25px;
-    border-radius: 20px;
-    transition: 0.3s;
-    box-shadow: 0 0 20px rgba(0,255,255,0.1);
-}
-
-.card h2 {
-    text-shadow: 0 0 10px cyan;
-}
-
-/* Efeito hover neon */
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 18px cyan;
-}
-
-/* Botão voltar */
-.voltar {
+/* Links */
+a {
     display: inline-block;
     margin-top: 30px;
-    color: cyan;
-    font-size: 20px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
     text-decoration: none;
-    transition: 0.3s;
+    color: #ffffff;
+    font-weight: bold;
+    transition: .25s ease;
 }
 
-.voltar:hover {
-    text-shadow: 0 0 10px cyan;
-    transform: scale(1.1);
+a:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.24);
 }
